@@ -2,3 +2,52 @@ body{
 	background-color: #f0f4f9;
 	color: #333;
 	padding: 40px 20px;
+	
+}
+h1{
+	color: blue;
+	text-align: center;
+    
+	
+}
+.table1 {
+	border-collapse: collapse;
+	background-color: #ffffff;
+	margin-bottom: 20px
+	
+}
+.table1 caption{
+	font-weight: bold;
+	margin-bottom: 10px
+	
+}
+h3{
+	text-align: justify;
+	color: #1a73e8;
+	
+}
+.table1 h3 {
+    color: black;
+    font-weight: normal;
+    
+}
+.table2 caption {
+	font-weight: bold;
+	color: red;
+	text-align: left;
+	margin-bottom: 10px
+}
+.table2 {
+	border-collapse: collapse;
+	background-color: #e3effd;
+	
+}
+img {
+	border-radius: 10px;
+	display:block;
+
+}
+p {
+   	font-weight: bold;
+	
+}
