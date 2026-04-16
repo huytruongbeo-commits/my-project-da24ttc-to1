@@ -1,75 +1,86 @@
-body{
-    background-image: url("shore.jpg");
-    background-size: 100%;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-
+body {
+    background-image: url("../assets/images/gym.jpg");
+    background-size: 45% auto;
+    background-position: 30% top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #000;
     color: black;
-    font-size: 25px;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
 }
+
 .container {
-    background-color:#74B9FF;
-border-radius: 20px;
-padding: 40px; 
-position: absolute; 
- right: 1%; 
-    
-    top: 17%;
-
-    margin-bottom: 100px;
-    box-shadow: blue    0px 0px 10px ;
-    font-size: 20px;
-font-weight: right;
-  text-align: right    ;
-width: 500px;
-  margin: 50px auto;
-  font-family: 'Arial', sans-serif;
-  margin-left:auto ;
-  float: right;
-
+    background-color: #787c80;
+    border-radius: 20px;
+    padding: 30px;
+    width: 450px;
+    float: right;
+    margin-right: 5%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.6);
 }
+
 h3 {
-   background-color: #0984E3; 
-    padding: 12px 20px; 
-box-shadow:blue 0px 0px 10px ;
-    margin-top: 5px;
-    font-size: 25px; 
-    border-radius: 6px;
-    text-align: left; 
- 
+    background-color: #8f9194;
+    color: white;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 0;
+    font-size: 22px;
+    border-radius: 10px;
+    text-align: center;
 }
-form#frmSign {
-    text-align: left; 
-    margin-left: 40px;  
- border-radius: 8px; 
 
+form#frmSign {
+    display: flex;
+    flex-direction: column;
 }
-.tiptuc {
-    background-color: #0984E3; 
-    color: #ffffff; 
-    padding: 12px 20px;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 8px; 
-    width: 30%; 
-    margin-top: 20px;
-    
+
+.hh {
+    width: 100%;
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
-.gioitinh{
-    font-size: 20px;
-}
-.hh{
-    width: 100%; 
-  padding: 9px;
-   
-  
-    font-size: 18px; 
-  
-    border-radius: 6px;
-}
-.kk{
+
+.kk {
     border-radius: 5px;
-     width: 30%;
-    padding: 3px;
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.gioitinh {
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.radio-wrapper {
+    margin-top: 5px;
+}
+
+.tiptuc {
+    background-color: #4a5b68;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tiptuc:hover {
+    background-color: #4f5d68;
+    transform: scale(1.02);
 }

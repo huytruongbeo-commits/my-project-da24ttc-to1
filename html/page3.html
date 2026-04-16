@@ -1,32 +1,26 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <title>Đăng ký câu lạc bộ GIT</title>
+    <title>Đăng ký Hội viên Gym & Fitness</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style3.css">
 </head>
 <body>
     <div class="container">
         <form id="frmSign">
-            <h3>Đăng ký tài khoản </h3>
+            <img src="../assets/images/avatar.jpg" alt="Avatar" style="width: 100px; height: 100px; border-radius: 50%; display: block; margin: 0 auto 10px auto; border: 3px solid #007bff;">
+
+            <h3>ĐĂNG KÝ HỘI VIÊN GYM</h3>
+            <p style="text-align: center; color: #333; font-weight: bold;">Bắt đầu hành trình thay đổi bản thân ngay hôm nay</p>
+
             <div class="hh">
                 <label for="hovaten">Họ và tên:</label>
                 <input class="kk" type="text" id="hovaten" placeholder="Nhập họ và tên của bạn">
             </div>
 
-            <div class="hh">
-                <label for="mssv">Mã sinh viên:</label>
-                <input class="kk" type="text" id="mssv" placeholder="Nhập mã sinh viên">
-            </div>
-
-            <div class="hh">
-                <label for="lop">Lớp:</label>
-              <input class="kk" type="text" id="lop" placeholder="Nhập tên lớp">
-            </div>
-            
-
             <div class="gioitinh">
-                <label for="gioitinh"><b>Giới tính:</b></label>
+                <label><b>Giới tính:</b></label>
                 <div class="radio-wrapper">
                     <input type="radio" id="nam" name="gioitinh" value="nam">
                     <label for="nam">Nam</label>
@@ -37,25 +31,31 @@
 
             <div class="hh">
                 <label for="ngaysinh">Ngày sinh:</label>
-                <input class="kk"type="date" id="ngaysinh">
+                <input class="kk" type="date" id="ngaysinh">
             </div>
 
-            
             <div class="hh">
-                <label for="sdt">Số điện thoại & Địa chỉ:</label>
-                <div class="row-inner">
-                    <input class="kk"type="text" id="sdt" placeholder="Số điện thoại">
-                   
-                </div>
+                <label for="sdt">Số điện thoại:</label>
+                <input class="kk" type="text" id="sdt" placeholder="Nhập số điện thoại liên lạc">
             </div>
 
             <div class="hh">
                 <label for="email">Email:</label>
-                <input class="kk" type="email" id="email" placeholder="Nhập email của bạn" placeholder="Nhập email của bạn">
+                <input class="kk" type="email" id="email" placeholder="Nhập email của bạn">
             </div>
-            <button type="submit" class="tiptuc">Tiếp tục</button>
-        </div>
-        
+
+            <div class="hh">
+                <label for="muctieu">Mục tiêu tập luyện:</label>
+                <select class="kk" id="muctieu">
+                    <option value="tangco">Tăng cơ (Bulking)</option>
+                    <option value="giammo">Giảm mỡ (Cutting)</option>
+                    <option value="fitness">Giữ dáng (Fitness)</option>
+                    <option value="boxing">Boxing / Võ thuật</option>
+                </select>
+            </div>
+
+            <button type="submit" class="tiptuc">Đăng ký ngay</button>
+        </form>
     </div>
 </body>
-</html>
+</html>>
