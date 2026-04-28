@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>Sản phẩm Kawasaki</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/style6.css">
+</head>
+<body>
+
+    <script>
+        const newDiv = document.createElement("div");
+        newDiv.setAttribute("class", "product-item");
+        const newImage = document.createElement("img");
+        newImage.setAttribute("src", "../assets/images/xe.webp");
+        newImage.setAttribute("alt", "Kawasaki Ninja H2");
+        const titleWrap = document.createElement("p");
+        titleWrap.setAttribute("class", "product-name");
+        const newText = document.createTextNode("Kawasaki Ninja H2");
+        titleWrap.appendChild(newText);
+        const priceWrap = document.createElement("p");
+        priceWrap.setAttribute("class", "price-box");
+        const newPrice = document.createTextNode("Giá: 1.000.000.000 VNĐ");
+        priceWrap.appendChild(newPrice);
+        const detailWrap = document.createElement("p");
+        detailWrap.setAttribute("class", "detail-link");      
+        const detailLink = document.createElement("a");
+        detailLink.setAttribute("href", "https://vnexpress.net/oto-xe-may/v-bike/dong-xe/kawasaki-ninja-h2-77");
+        detailLink.setAttribute("target", "_blank"); // Mở tab mới
+        const detailText = document.createTextNode("Xem chi tiết");
+        detailLink.appendChild(detailText); // Gắn chữ vào link
+        detailWrap.appendChild(detailLink); // Gắn link vào thẻ p
+        newDiv.appendChild(newImage);    // Ảnh
+        newDiv.appendChild(titleWrap);   // Tên
+        newDiv.appendChild(priceWrap);   // Giá
+        newDiv.appendChild(detailWrap);  // Dòng "Xem chi tiết"
+
+        // 7. Hiển thị ra Body
+        document.body.appendChild(newDiv);
+    </script>
+
+</body>
+</html>
