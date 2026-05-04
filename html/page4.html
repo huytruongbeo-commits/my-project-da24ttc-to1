@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>hóa đơn thanh toán</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/style4.css">
+    </head>
+    <body>
+        <h align="center"> hóa đơn thanh toán</h>
+        <table border="1">
+            <tr>
+                <td>STT</td>
+                <td>tên sản phẩm</td>
+                <td>số lượng</td>
+                <td>đơn giá</td>
+                <td>thành tiền</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>a</td>
+                <td class="sl">3</td>
+                <td class="dg"> 5000</td>
+                <td class="tt"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>b</td>
+                <td class="sl">5</td>
+                <td class="dg">50000</td>
+                <td class="tt"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>c</td>
+                <td class="sl">5</td>
+                <td class="dg">500000</td>
+                <td class="tt"></td>
+            </tr>
+            <tr>
+                <td colspan="3">tổng thanh toán</td>
+                <td colspan="2" id="tongthanhtoan"></td>
+            </tr>
+        </table>
+        <script>
+    const donggia = document.getElementsByClassName("dg");
+    const soluong = document.getElementsByClassName("sl");
+    const thanhtien = document.getElementsByClassName("tt");
+    let tongthanhtoan = 0;
+    for (let i = 0; i < donggia.length; i++) {
+        let dg = Number(donggia[i].innerHTML);
+        let sl = Number(soluong[i].innerHTML);
+        
+        let tt = dg * sl;
+        thanhtien[i].innerHTML = tt;
+        
+        tongthanhtoan += tt;
+    }
+
+    const tongtt_element = document.getElementById("tongthanhtoan");
+    tongtt_element.innerHTML = tongthanhtoan;
+</script>
+    </body>
+</html>

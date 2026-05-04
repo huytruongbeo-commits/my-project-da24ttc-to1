@@ -1,0 +1,22 @@
+.container {
+    background-color: rgb(242, 255, 125);
+    padding: 30px;
+    border-radius: 15px; 
+    box-shadow: 0 5px 15px rgba(247, 158, 158, 0.781); 
+    width: 350px;
+    text-align: center;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}

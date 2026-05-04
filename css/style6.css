@@ -1,0 +1,18 @@
+body {
+    background-color: #99d4f0cc; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.product-item{
+    color:rgb(235, 38, 64);
+    font-size:30px;
+    text-align: center;
+}
+.detail-link a {
+    color: #fc351a;          
+    text-decoration: underline; 
+    font-size: 30px;
+}
